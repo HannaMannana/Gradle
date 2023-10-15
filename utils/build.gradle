@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.3.5'
+
+apply plugin: MyPlugin
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes "Implementation-Title": project.name,
+                'Implementation-Version': version
+    }
+}
+
+class MyPlugin implements Plugin<Project> {
+    @Override
+    void apply(Project project) {
+        println("-------------------This is my report-------------------")
+    }
+}
