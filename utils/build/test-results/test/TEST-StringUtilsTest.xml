@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StringUtilsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-10-17T11:49:34" hostname="DESKTOP-MALCKM6" time="0.025">
+  <properties/>
+  <testcase name="strIsNegativeNumberTest()" classname="StringUtilsTest" time="0.022"/>
+  <testcase name="strIsPositiveNumberTest()" classname="StringUtilsTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
